@@ -120,7 +120,7 @@ a:hover {
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 2rem 0 8rem;
 }
 
 .display-table {
@@ -156,7 +156,7 @@ a:hover {
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .title-a {
@@ -1078,6 +1078,8 @@ a:hover {
 .testimonial-box {
   color: #fff;
   text-align: center;
+  will-change: filter;
+  transition: all 0.5s;
 }
 
 .testimonial-box .author-test {
@@ -1085,6 +1087,9 @@ a:hover {
 }
 
 .testimonial-box .author-test img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -1107,6 +1112,12 @@ a:hover {
   margin: 0 auto;
   border-radius: 50%;
   line-height: 1.6;
+}
+
+.testimonial-box:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 2em #d6f6ffaa);
 }
 
 @media (min-width: 768px) {
