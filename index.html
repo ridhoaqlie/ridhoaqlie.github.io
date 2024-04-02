@@ -18,6 +18,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/aos-master/dist/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -66,9 +67,7 @@
             </ul>
           </li> -->
           <li>
-            <button style="background-color: rgb(0, 120, 255); border-radius: 0.5em; padding: 0.3em 1em;">
-              <a class="nav-link scrollto" href="#contact">Contact<span class="bi bi-chevron-double-right"></span></a>
-            </button>
+            <a class="btn btn-primary btn js-scroll px-4 py-2" href="#contact" role="button">CONTACT</a>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -78,15 +77,25 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg2.png)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/cool-background.png)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Ridho Aqli Efendi</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Designer, Freelancer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        <div class="container m-auto mt-md-5 row">
+          <div class="col-md-10 col-lg-6 mt-md-5 mx-md-auto">
+            <p class="display-6 color-d">Hello, I'm</p>
+            <h1 class="hero-title mb-4">Ridho Aqli Efendi</h1>
+            <p>
+              Just <strong>Graduated</strong> from IT and try to share my <strong>portofolio</strong>.<br>
+              Go look around with my works. Hope you guys are interested :)
+            </p>
+            <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Designer, Freelancer"></span></p>
+            <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="https://linkedin.com/in/ridhoaqlie"
+                target="_blank" role="button">Reach me</a></p>
+          </div>
+          <div class="col-md-12 col-lg-6 hero-img">
+            <img src="assets/img/hero-profile.png">
+          </div>
         </div>
       </div>
     </div>
@@ -103,19 +112,11 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/pas-photo.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Ridho Aqli Efendi</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>ridhoaqlie@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(+62) 852-3092-8554</span></p>
+                    <div class="col-sm-12 col-md-8">
+                      <div class="div-img-bg" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about-img-border">
+                          <img src="assets/img/pas-photo.jpg" class="img-fluid b-shadow-a" alt="">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -128,19 +129,15 @@
                       </h5>
                     </div>
                     <p class="lead">
-                      I am a Computer Engineering student at Brawijaya University, equipped with a solid foundation in
-                      computer programming.
-                      My skill set has been refined through various software development projects, encompassing both
-                      application and web development,
-                      showcasing my proficiency in this field. My experience in leadership roles within various
-                      organizations has highlighted my effective
-                      management and collaborative abilities. My passion lies in tackling complex challenges within the
-                      realm of computer science, making me an
-                      enthusiastic and dedicated individual, poised to pursue a promising career as a developer.
-                    </p>
-                    <p class="lead">
-                      I just <strong>Graduated</strong> in IT and i try to share my <strong>portofolio</strong>.
-                      I have several kind of project such a Design, App, Website, etc. Hope you guys are interested :)
+                      As a freelance software developer with a degree in informatics engineering, I am dedicated to
+                      continuously improving my skills in web development through certified courses and self-directed
+                      learning. With a strong portfolio showcasing my expertise, I have successfully completed various
+                      website even application development projects. My active involvement in organizations has honed my
+                      leadership and teamwork abilities, allowing me to effectively collaborate with others to achieve
+                      common goals. Proficient in a range of technologies and programming languages for web development,
+                      I am passionate about overcoming challenges in the field of computer science and am eager to
+                      pursue a rewarding career as a developer, where I can contribute my skills and expertise to
+                      innovative projects.
                     </p>
                   </div>
                 </div>
@@ -360,7 +357,7 @@
         </div>
 
         <div class="row">
-          <div class="col-3">
+          <div class="col-3" data-aos="zoom-out" data-aos-duration="1000">
             <div class="testimonial-box">
               <div class="author-test">
                 <img src="assets/img/java-logo.png" alt="" class="rounded-circle b-shadow-a"
@@ -369,7 +366,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
             <div class="testimonial-box">
               <div class="author-test">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -383,7 +380,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600">
             <div class="testimonial-box">
               <div class="author-test">
                 <img src="assets/img/laravel-logo.png" alt="" class="rounded-circle b-shadow-a">
@@ -391,7 +388,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="900">
             <div class="testimonial-box">
               <div class="author-test">
                 <img src="assets/img/mysql-logo.png" alt="" class="rounded-circle b-shadow-a">
@@ -523,8 +520,8 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+      style="background-image: url(assets/img/overlay.jpg)">
+      <!-- <div class="overlay-mf"></div> -->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -603,7 +600,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <script src="assets/aos-master/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
