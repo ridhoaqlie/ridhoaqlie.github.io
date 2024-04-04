@@ -10,6 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
+  font-family: "Poppins", helvetica;
+  color: #898989;
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
@@ -29,13 +31,12 @@ h6 {
 }
 
 a {
-  color: #1e1e1e;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: #2C4373;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -61,8 +62,7 @@ a:hover {
 .box-shadow,
 .card-blog,
 .work-box,
-.service-box,
-.paralax-mf {
+.service-box {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -814,13 +814,12 @@ a:hover {
 }
 
 .hero-single .hero-title {
-  text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   .hero-single .hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -869,6 +868,11 @@ a:hover {
 
 .about-info {
   text-align: center;
+}
+
+.lead {
+  font-weight: 300;
+  text-align: justify;
 }
 
 .div-img-bg {
@@ -1094,6 +1098,10 @@ a:hover {
   padding: 0;
 }
 
+.portfolio-info strong {
+  font-weight: 500;
+}
+
 .bullet {
   position: relative;
   top: 1px;
@@ -1122,8 +1130,7 @@ a:hover {
 
 .testimonial-box .author-test img {
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -1198,6 +1205,28 @@ a:hover {
 .contact-mf {
   margin-top: 4rem;
 }
+
+.socials-media ul {
+  display: inline-flex;
+  gap: 1em;
+}
+
+.socials-media ul li a {
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.socials-media ul li a:hover {
+  color: #2C4373;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+
 
 @media (min-width: 767px) {
   .contact-mf .box-pl2 {
@@ -1532,4 +1561,114 @@ footer .credits a {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+#portfolio {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.filter-active {
+  color: #0078ff;
+}
+
+#portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #b8a07e;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #b8a07e;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(75, 74, 74, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
 }
