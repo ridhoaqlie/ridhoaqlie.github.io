@@ -11,8 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Poppins", helvetica;
-  color: #898989;
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
   color: #4e4e4e;
 }
 
@@ -747,17 +746,40 @@ a:hover {
   color: #fff;
 }
 
+.hero .hero-img {
+  text-align: center;
+  margin-top: 1em;
+}
+
 .hero .hero-img img {
-  width: 70%;
+  width: 100%;
   transition: all 0.3s;
 }
 
-@media (min-width:990px) {
+@media (min-width:768px) {
+  .hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width:768px) {
+  .hero-img {
+    margin-top: 5em;
+  }
+}
+
+@media (min-width:992px) {
   .hero .hero-img img {
     width: 100%;
   }
 }
 
+@media (max-width:992px) {
+  .hero-container {
+    flex-wrap: wrap-reverse;
+  }
+
+}
 
 .hero .hero-img img:hover {
   transform: rotate(0.05rad) scale(1.05);
@@ -781,12 +803,13 @@ a:hover {
 .hero .hero-title {
   color: #fff;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2.3em;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 1140px) {
   .hero .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.5em;
   }
 }
 
@@ -852,6 +875,12 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+@media (max-width:992) {
+  .about-img-container {
+    justify-content: center;
+  }
+}
+
 .about-mf .about-img-border {
   box-sizing: border-box;
 }
@@ -873,6 +902,12 @@ a:hover {
 .lead {
   font-weight: 300;
   text-align: justify;
+}
+
+@media (max-width:992px) {
+  .lead {
+    font-size: 1rem;
+  }
 }
 
 .div-img-bg {
@@ -1195,6 +1230,21 @@ a:hover {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Achieve
+--------------------------------------------------------------*/
+.achieve .card {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.achieve-card {
+  width: 280px;
+  height: 370px;
+  background-color: white;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1590,7 +1640,7 @@ footer .credits a {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
