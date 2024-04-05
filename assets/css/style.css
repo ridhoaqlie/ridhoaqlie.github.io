@@ -9,6 +9,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", helvetica;
   background-color: #f7f7f7;
@@ -87,7 +91,6 @@ a:hover {
   width: 32px;
   height: 32px;
   margin-right: 4px;
-  overflow: hidden;
 }
 
 .bg-image {
@@ -1160,9 +1163,6 @@ a:hover {
   transition: all 0.5s;
 }
 
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
 
 .testimonial-box .author-test img {
   object-fit: cover;
@@ -1244,11 +1244,16 @@ a:hover {
 }
 
 .achieve-card {
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 280px;
-  height: 370px;
+  min-height: 390px;
   background-color: white;
 }
 
+.achieve-card:hover {
+  cursor: pointer;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1394,14 +1399,14 @@ a:hover {
   left: 15px;
   right: 15px;
   line-height: 25px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .card-blog .card-category {
   display: inline-block;
   color: #fff;
   padding: 0 15px 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #0078ff;
   border-radius: 4px;
 }
