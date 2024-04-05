@@ -1720,6 +1720,7 @@ footer .credits a {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+  text-align: justify;
 }
 
 .portfolio-details .portfolio-description h2 {
