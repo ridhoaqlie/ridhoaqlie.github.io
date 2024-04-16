@@ -564,6 +564,10 @@ a:hover {
   color: #fff;
 }
 
+.other-nav:hover {
+  cursor: pointer;
+}
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
