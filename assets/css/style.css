@@ -228,19 +228,33 @@ a:hover {
   padding: 1.5rem 0;
 }
 
+.socials ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .socials ul li {
-  display: inline-block;
+  text-align: center;
+  min-width: 70px;
+}
+
+
+.socials ul li p {
+  margin-bottom: 3px;
 }
 
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   font-size: 1.2rem;
   border-radius: 50%;
   line-height: 1.6;
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+  margin: auto;
 }
 
 .socials .ico-circle:hover {
